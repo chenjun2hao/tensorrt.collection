@@ -11,6 +11,10 @@
 
 ## 3. 编译
 
+3.1 requirements
+- [tensorrt 7.x and plugin](https://github.com/chenjun2hao/TensorRT/tree/release/7.2)
+
+3.2 编译
 修改根目录下的`CMakeLists.txt`，其中
 - TENSORRT_ROOT：是tensorrt解压文件所在的位置
 
@@ -20,3 +24,6 @@ mkdir build && cd build
 cmake ..
 make -j4
 ```
+
+## other
+- 在做tensorrt模型转换和推理的时候，有可能需要一些插件，请参考:[tensorrt](https://github.com/chenjun2hao/TensorRT/tree/release/7.2)
