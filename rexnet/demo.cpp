@@ -7,6 +7,8 @@
 int main(int argc, char **argv){
     using namespace std;
     using namespace megEngine;
+    const float mean[3] = { 0.485, 0.456, 0.406 };
+    const float std[3]  = {0.229, 0.224, 0.225};
 
     const string engineFile = argv[1];
     const string imgpath    = argv[2];
@@ -25,7 +27,7 @@ int main(int argc, char **argv){
     // numInput = numTensorElements(model.inputDim);
     // inputDataHost = (float*) malloc(numInput * sizeof(float));
     // cvImageToTensor(img, inputDataHost, model.inputDim);
-    // preprocessVgg(inputDataHost, model.inputDim);
+    // preprocessVgg(inputDataHost, model.inputDim, mean, std);
 
     cv::Mat show;
     auto start = chrono::system_clock::now();

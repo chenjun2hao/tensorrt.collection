@@ -1,12 +1,14 @@
 ## 1. Updatas
 - 2020.03.25 add rexnet and test on tx2,nx
+- 2020.03.31 add grid_sample plugin and sfnet semantic segmentation
 
 ## 2. Benchmark
 
-| model  | batchsize |  mode   | size/(w,h) | nx/ms | tx2/ms |                     url                     |
-| :----: | :-------: | :-----: | :--------: | :---: | :----: | :-----------------------------------------: |
-| rexnet |     1     | float16 |  224*224   |  8.9  |   ~    | [rexnet](https://github.com/clovaai/rexnet) |
-| rexnet |     1     | float16 |  640*480   | 36.6  |   ~    | [rexnet](https://github.com/clovaai/rexnet) |
+| model  | batchsize |     mode      | size/(w,h) | 3080/ms | nx/ms | tx2/ms |                     url                     |
+| :----: | :-------: | :-----------: | :--------: | :-----: | :---: | :----: | :-----------------------------------------: |
+| rexnet |     1     |    float16    |  224*224   |         |  8.9  | 25.69  | [rexnet](https://github.com/clovaai/rexnet) |
+| rexnet |     1     |    float16    |  640*480   |         | 36.6  | 79.27  | [rexnet](https://github.com/clovaai/rexnet) |
+| sfnet  |     1     | int32/float16 |  640*480   | 8.79/2.71  |       |        | [sfnet](https://github.com/lxtGH/SFSegNets) |
 
 
 ## 3. 编译

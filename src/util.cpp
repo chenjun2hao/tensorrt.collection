@@ -46,14 +46,14 @@ void cvImageToTensor(const cv::Mat & image, float *tensor, nvinfer1::Dims dimens
   }
 }
 
-void preprocessVgg(float *tensor, nvinfer1::Dims dimensions)
+void preprocessVgg(float *tensor, nvinfer1::Dims dimensions, const float* mean, const float* std)
 {
   size_t channels = dimensions.d[1];
   size_t height = dimensions.d[2];
   size_t width = dimensions.d[3];
   const size_t strides[3] = { height * width, width, 1 };
-  const float mean[3] = { 0.485, 0.456, 0.406 }; // values from TensorFlow slim models code
-  const float std[3]  = {0.229, 0.224, 0.225};
+  // const float mean[3] = { 0.485, 0.456, 0.406 }; // values from TensorFlow slim models code
+  // const float std[3]  = {0.229, 0.224, 0.225};
 
   for (int i = 0; i < height; i++) 
   {

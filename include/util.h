@@ -30,5 +30,7 @@ void cvImageToTensor(const cv::Mat & image, float *tensor, nvinfer1::Dims dimens
  * @brief 
  * @param  tensor           My Param doc
  * @param  dimensions       My Param doc
+ * @param  mean             My Param doc
+ * @param  std              My Param doc
  */
-void preprocessVgg(float *tensor, nvinfer1::Dims dimensions);
+void preprocessVgg(float *tensor, nvinfer1::Dims dimensions, const float* mean, const float* std);

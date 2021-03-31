@@ -73,6 +73,7 @@ int Norm(void* src, float* dst, int w, int h, cudaStream_t stream){
     int blockSize = 512;
     int gridSize  = (n + blockSize - 1) / blockSize;
     NormKernel<<<gridSize, blockSize, 0, stream>>>((uchar3*)(src), dst, w, h, n);
+    return 0;
 }
 
 // in rgb order
