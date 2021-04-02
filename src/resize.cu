@@ -39,7 +39,7 @@ __global__ void resizeNormKernel(uchar3* src,float *dst,int dstW, int dstH,int s
     // bgr -> rgb + normlization
     dst[y*dstW + x]            = ((w1 *v1.z + w2 * v2.z + w3 *v3.z + w4 * v4.z ) - mean[0]) / Std[0] ;
     dst[stride + y*dstW + x]   = ((w1 *v1.y + w2 * v2.y + w3 *v3.y + w4 * v4.y ) - mean[1]) / Std[1] ;
-    dst[stride*2 + y*dstW + x] = ((w1 *v1.x + w2 * v2.x + w3 *v3.x + w4 * v4.x ) - mean[0]) / Std[2] ;
+    dst[stride*2 + y*dstW + x] = ((w1 *v1.x + w2 * v2.x + w3 *v3.x + w4 * v4.x ) - mean[2]) / Std[2] ;
 }
 
 int resizeAndNorm(void * p,float *d,int w,int h,int in_w,int in_h, cudaStream_t stream, bool keepration ,bool keepcenter){
