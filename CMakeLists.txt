@@ -11,11 +11,11 @@ set(CMAKE_BUILD_TYPE Debug)
 # set nvidia card 30x->86, tx2->62, nx->62
 set(GPU_ARCHS 86)
 set(TENSORRT_ROOT /home/darknet/CM/profile/TensorRT-7.2.2.3)
-set(Plugin_lib /home/darknet/CM/12_tensorrt/TensorRT/libs)
+# set(Plugin_lib /home/darknet/CM/12_tensorrt/TensorRT/libs)
 
 include_directories(${TENSORRT_ROOT}/include)
 
-link_directories(${Plugin_lib})
+link_directories(${TENSORRT_ROOT}/lib)
 
 add_subdirectory(src)
 add_subdirectory(rexnet)

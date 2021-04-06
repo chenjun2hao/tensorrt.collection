@@ -15,7 +15,7 @@ target_link_libraries(classify
                     inference_api
                     ${OpenCV_LIBS})      
  
-add_executable(eval demo.cpp)
+add_executable(eval eval.cpp)
 target_link_libraries(eval 
                     inference_api
                     ${OpenCV_LIBS})  
