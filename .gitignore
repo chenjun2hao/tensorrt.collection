@@ -3,7 +3,6 @@ output/
 build/
 lib/
 
-# bin
-classify
-seg
-eval
+# exe files
+bin/
+

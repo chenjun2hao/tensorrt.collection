@@ -4,7 +4,7 @@ project(tensorrt_template)
 # set lib, exe output path
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/lib)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
 set(CMAKE_BUILD_TYPE Debug)
 # set(CMAKE_BUILD_TYPE release)
@@ -20,4 +20,5 @@ link_directories(${TENSORRT_ROOT}/lib)
 add_subdirectory(src)
 add_subdirectory(rexnet)
 add_subdirectory(segmentation)
+add_subdirectory(module)
 

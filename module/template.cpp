@@ -14,7 +14,7 @@ int main(int argc, char **argv){
     const string imgpath    = argv[2];
 
     net model(engineFile);
-    unique_ptr<float []> output(new float[model.outputDim.d[1]]);
+    unique_ptr<float []> output(new float[model.mBindBufferSizes[1]]);
 
     cv::Mat img, show;
     img = cv::imread(imgpath);
@@ -43,11 +43,6 @@ int main(int argc, char **argv){
     auto end = chrono::system_clock::now();
     auto duration = chrono::duration_cast<chrono::milliseconds>(end - start)/100.0;
     cout << "cost time is:" << double(duration.count()) << "ms" << endl;
-
-    // read labels
-    std::vector<size_t> index = argsort(output.get(), model.outputDim);
-
-    cout << "predict: " << index[0] << " " << output[index[0]] << endl;
     
     return 0;
 }

@@ -1,17 +1,20 @@
 ## 1. Updatas
-- 2020.03.25 add rexnet and test on tx2,nx
+- 2020.04.06 add Efficientnet-b1，Efficientnetv2-m，and test on tx2
 - 2020.03.31 add grid_sample plugin and sfnet semantic segmentation
+- 2020.03.25 add rexnet and test on tx2,nx
 
 ## 2. Benchmark
 
-|      category      |       model       |    mode    | size/(w,h) |  3080/ms  |    nx/ms     |    tx2/ms    |                                url                                |
-| :----------------: | :---------------: | :--------: | :--------: | :-------: | :----------: | :----------: | :---------------------------------------------------------------: |
-| **Classification** |      rexnet       | float32/16 |  224*224   |  4.04/~   |    ~/8.9     |   ~/25.69    |            [rexnet](https://github.com/clovaai/rexnet)            |
-|                    |  Efficientnet-b1  | float32/16 |  224*224   |  1.91/~   |      ~       |      ~       | [Efficientnet](https://github.com/lukemelas/EfficientNet-PyTorch) |
-|                    |      rexnet       | float32/16 |  640*480   |           |    ~/36.6    |   ~/79.27    |            [rexnet](https://github.com/clovaai/rexnet)            |
-|  **Segmentation**  |       sfnet       | float32/16 |  640*480   | 8.79/2.71 | 109.74/50.03 | 150.87/99.57 |            [sfnet](https://github.com/lxtGH/SFSegNets)            |
-|                    |   hrnetw18_ocr    | float32/16 |  640*480   |     ~     |   ~/65.565   |   ~/183.81   | [hrnet_ocr](https://github.com/HRNet/HRNet-Semantic-Segmentation) |
-|                    | ddrnet23_slim_ocr | float32/16 |  640*480   |     ~     |   ~/17.805   |   ~/47.41    |           [ddrnet](https://github.com/ydhongHIT/DDRNet)           |
+|      category      |       model       |    mode    | size/(w,h) |  3080/ms  |    nx/ms     |    tx2/ms    |                                url                                 |
+| :----------------: | :---------------: | :--------: | :--------: | :-------: | :----------: | :----------: | :----------------------------------------------------------------: |
+| **Classification** |      rexnet       | float32/16 |  224*224   |  4.04/~   |    ~/8.9     |   ~/25.69    |            [rexnet](https://github.com/clovaai/rexnet)             |
+|                    |  Efficientnet-b1  | float32/16 |  224*224   |  1.91/~   |      ~       | 17.47/15.62  | [Efficientnet](https://github.com/lukemelas/EfficientNet-PyTorch)  |
+|                    |    Effnetv2_s     | float32/16 |  224*224   | 3.64/1.57 |      ~       | 32.02/24.99  | [EfficientnetV2](https://github.com/d-li14/efficientnetv2.pytorch) |
+|                    |      rexnet       | float32/16 |  640*480   |     ~     |    ~/36.6    |   ~/79.27    |            [rexnet](https://github.com/clovaai/rexnet)             |
+|  **Segmentation**  |       sfnet       | float32/16 |  640*480   | 8.79/2.71 | 109.74/50.03 | 150.87/99.57 |            [sfnet](https://github.com/lxtGH/SFSegNets)             |
+|                    |   hrnetw18_ocr    | float32/16 |  640*480   |     ~     |   ~/65.565   |   ~/183.81   | [hrnet_ocr](https://github.com/HRNet/HRNet-Semantic-Segmentation)  |
+|                    | ddrnet23_slim_ocr | float32/16 |  640*480   |     ~     |   ~/17.805   |   ~/47.41    |           [ddrnet](https://github.com/ydhongHIT/DDRNet)            |
+|                    |    lite_hrnet     | float32/16 |  640*480   | 6.23/5.05 |      ~       |      ~       |         [lite_hrnet](https://github.com/HRNet/Lite-HRNet)          |
 
 
 ## 3. 编译
