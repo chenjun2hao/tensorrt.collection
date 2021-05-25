@@ -13,7 +13,7 @@
 |                    |    Effnetv2_s     | float32/16 |  224*224   | 3.64/1.57 |      ~       | 32.02/24.99  |    [EfficientnetV2](https://github.com/d-li14/efficientnetv2.pytorch)    |
 |                    |      rexnet       | float32/16 |  640*480   |     ~     |    ~/36.6    |   ~/79.27    |               [rexnet](https://github.com/clovaai/rexnet)                |
 |  **Segmentation**  |       sfnet       | float32/16 |  640*480   | 8.79/2.71 | 109.74/50.03 | 150.87/99.57 |               [sfnet](https://github.com/lxtGH/SFSegNets)                |
-|                    |   hrnetw18_ocr    | float32/16 |  640*480   |     ~     |   ~/65.565   |   ~/183.81   |    [hrnet_ocr](https://github.com/HRNet/HRNet-Semantic-Segmentation)     |
+|                    |   hrnetv2_w18_ocr    | float32/16 |  640*480   |     ~     |   ~/65.565   |   ~/183.81   |    [hrnet_ocr](https://github.com/HRNet/HRNet-Semantic-Segmentation)     |
 |                    | ddrnet23_slim_ocr | float32/16 |  640*480   |     ~     |   ~/17.805   |   ~/47.41    |              [ddrnet](https://github.com/ydhongHIT/DDRNet)               |
 |                    |   ddrnet23_ocr    | float32/16 |  640*480   |     ~     |     ~/23     |     ~/93     |              [ddrnet](https://github.com/ydhongHIT/DDRNet)               |
 |                    |    lite_hrnet     | float32/16 |  640*480   | 6.23/5.05 |      ~       |      ~       |            [lite_hrnet](https://github.com/HRNet/Lite-HRNet)             |
