@@ -1,4 +1,5 @@
 ## 1. Updatas
+- 2021.07.05 add [SegFormer 2021](https://github.com/NVlabs/SegFormer) to benchmark
 - 2021.05.19 add [AttaNet AAAI2021](https://github.com/songqi-github/AttaNet) to benchmark
 - 2021.04.06 add Efficientnet-b1，Efficientnetv2-m，and test on tx2
 - 2021.03.31 add grid_sample plugin and sfnet semantic segmentation
@@ -20,6 +21,7 @@
 |                    |     mobilev2      | float32/16 |  640*480   |  ~/3.14   |   ~/62.01    |   ~/137.85   | [mobilev2](https://github.com/CSAILVision/semantic-segmentation-pytorch) |
 |                    |   resnet50_psp    | float32/16 |  640*480   |  ~/6.56   |   ~/148.02   |   ~/422.23   | [resnet50](https://github.com/CSAILVision/semantic-segmentation-pytorch) |
 |                    |      AttaNet      | float32/16 |  640*480   |    ~/~    |     ~/~      | 61.45/43.33  |        [atta-resnet18](https://github.com/songqi-github/AttaNet)         |
+|                    |    SegFormer      | float32/16 |  640*480   |    ~/~    |     ~/~      |633.02/521.88 |        [SegFormer 2021](https://github.com/NVlabs/SegFormer)             |
 
 ## 3. 编译
 
