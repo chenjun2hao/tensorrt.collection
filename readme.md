@@ -15,8 +15,8 @@
 |                    |      rexnet       | float32/16 |  640*480   |     ~     |    ~/36.6    |   ~/79.27    |               [rexnet](https://github.com/clovaai/rexnet)                |
 |  **Segmentation**  |       sfnet       | float32/16 |  640*480   | 8.79/2.71 | 109.74/50.03 | 150.87/99.57 |               [sfnet](https://github.com/lxtGH/SFSegNets)                |
 |                    |   hrnetv2_w18_ocr    | float32/16 |  640*480   |     ~     |   ~/65.565   |   ~/183.81   |    [hrnet_ocr](https://github.com/HRNet/HRNet-Semantic-Segmentation)     |
-|                    |   hrnetv2_w18_ocr_ssld    | float32/16 |  640*480   |     ~     |   ~/~   |   ~/161.2   |    [hrnet_ocr](https://github.com/HRNet/HRNet-Semantic-Segmentation)     |
-|                    |   hrnetv2_w18_ocr_ssld_pruning    | float32/16 |  640*480   |     ~     |   ~/~   |   ~/79.2   |    [hrnet_ocr](https://github.com/HRNet/HRNet-Semantic-Segmentation)     |
+|                    |   hrnetv2_w18_ocr_ssld    | float32/16 |  640*480   |     ~     |   ~/~   |   ~/160   |    [hrnet_ocr](https://github.com/HRNet/HRNet-Semantic-Segmentation)     |
+|                    |   hrnetv2_w18_ocr_ssld_pruning/0.1    | float32/16 |  640*480   |     ~     |   ~/~   |   ~/77   |    [hrnet_ocr](https://github.com/HRNet/HRNet-Semantic-Segmentation)     |
 |                    | ddrnet23_slim_ocr | float32/16 |  640*480   |     ~     |   ~/17.805   |   ~/47.41    |              [ddrnet](https://github.com/ydhongHIT/DDRNet)               |
 |                    |   ddrnet23_ocr    | float32/16 |  640*480   |     ~     |     ~/23     |     ~/93     |              [ddrnet](https://github.com/ydhongHIT/DDRNet)               |
 |                    |    lite_hrnet     | float32/16 |  640*480   | 6.23/5.05 |      ~       |      ~       |            [lite_hrnet](https://github.com/HRNet/Lite-HRNet)             |
